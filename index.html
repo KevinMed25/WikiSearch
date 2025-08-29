@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador Wikipedia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Buscador de Wikipedia</h1>
+  
+  <div class="search-bar">
+    <div class="search-box">
+      <input type="text" id="query" placeholder="Escribe algo...">
+      <button id="btnBuscar">Buscar</button>
+    </div>
+
+    <label for="orden">Ordenar por:</label>
+    <select id="orden">
+      <option value="relevancia">Relevancia</option>
+      <option value="fecha">Fecha de última edición</option>
+      <option value="tamano">Tamaño de página</option>
+    </select>
+  </div>
+
+
+  <div id="resultados"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
